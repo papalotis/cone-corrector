@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "cone_corrector"
+authors = [{ name = "Panagiotis Karagiannis", email = "papalotis1@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = ["numpy", "pydantic", "pydantic_numpy"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["TRY003", "EM102", "TCH001"]
+
+[tool.ruff]
+line-length = 120
