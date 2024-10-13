@@ -1,0 +1,3 @@
+[submodule "layout-merchant"]
+	path = layout-merchant
+	url = https://github.com/papalotis/layout-merchant.git
